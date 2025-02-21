@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.hero-text {
+  font-size: 4rem;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.product-card {
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+.nav-link {
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #4ADE80;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.green-button {
+  background-color: #4ADE80;
+  color: #000000;
+  transition: all 0.3s ease;
+}
+
+.green-button:hover {
+  background-color: #22C55E;
+}
